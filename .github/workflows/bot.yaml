@@ -10,9 +10,15 @@ on:
   # Schedule the workflow to run using a cron expression
   schedule:
     # Runs at 0 minutes past the hour, every 3 hours, starting at 01:00
-    - cron: "0 7 * * *"
+    - cron: "0 5 */2 * *"
+    - cron: "0 2 1-31/3 * *"
     - cron: "0 2 1-31/4 * *"
-    - cron: "0 5 1-31/10 * *"
+    - cron: "0 5 1-31/5 * *"
+    - cron: "0 5 */7 * *"
+    - cron: "0 2 1-31/10 * *"
+    - cron: "0 5 1-31/15 * *"
+    - cron: "0 2 1-31/9 * *"
+    - cron: "0 5 1-31/6 * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
